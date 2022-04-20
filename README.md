@@ -1,2 +1,2 @@
 # Todo-App
-Flask_simple_todoapp
+Simple_Flask_todoapp
