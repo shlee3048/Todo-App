@@ -1,0 +1,20 @@
+mysqlworkbench로 접속 후 
+
+'''
+SHOW DATABASES;
+
+CREATE DATABASES db-3tier;
+'''
+
+flask shell
+>>> from app import db
+>>> db.create_all()
+
+'''
+SHOW DATABASES;
+
+USE db-3tier;
+
+SHOW TABLES;
+'''
+으로 확인
