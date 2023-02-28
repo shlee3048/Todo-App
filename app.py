@@ -8,7 +8,7 @@ aws_db = {
     "password": "adminadmin",
     "host": "rds-3tier.cwdtf0uzwslg.ap-northeast-2.rds.amazonaws.com",
     "port": 3306, # mysql의 포트
-    "database": "test",
+    "database": "-3tier",
 }
 app.config['SQLALCHEMY_DATABASE_URI'] = f"mysql+pymysql://{aws_db['user']}:{aws_db['password']}@{aws_db['host']}:{aws_db['port']}/{aws_db['database']}?charset=utf8"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
